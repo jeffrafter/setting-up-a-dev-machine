@@ -16,24 +16,24 @@ Then edit the control strip to have fewer buttons (or spaces) using Customize Co
 
 ![](https://rpl.cat/uploads/4m5n263YIHqjtkDw8bu5cBHukenHdxZbTOItIq1K9b4/public.png)
 
-## Install some software from the App Store
-* Xcode (and command line developer tools)
-* VSCode
-* Slack
-* Bear
-* Unity Hub (and the latest final version of Unity)
-* Rpl.cat (set shortcuts,  login)
-* Zoom (turn off video and audio when joining, touch up appearance, HD)
-* GitHub Desktop
-* 1Password 7 (download from site)
-* Cura
-* Sequel Pro
-* PSequel
-* Insomnia
-* Highland 2
-* Kindle
-* Kap
-* KeepingYouAwake
+## Install some software 
+* Xcode (App Store, and command line developer tools)
+* VSCode (https://code.visualstudio.com/download)
+* Slack (https://slack.com/downloads/mac)
+* ~Bear~
+* Unity Hub (and the latest final version of Unity, https://unity3d.com/get-unity/download)
+* Rpl.cat (http://rpl.cat/download/, set shortcuts,  login)
+* Zoom (https://zoom.us/download, turn off video and audio when joining, touch up appearance, HD)
+* GitHub Desktop (https://desktop.github.com/)
+* 1Password 7 (https://1password.com/downloads/mac/)
+* Cura (https://ultimaker.com/software/ultimaker-cura)
+* Sequel Pro (https://sequelpro.com/download)
+* PSequel (http://www.psequel.com/)
+* Insomnia (Insomnia Core, https://insomnia.rest/download/)
+* Highland 2 (app store)
+* Kindle (https://www.amazon.com/kindle-dbs/fd/kcp/ref=klp_mn)
+* Kap (https://getkap.co/)
+* KeepingYouAwake (https://github.com/newmarcel/KeepingYouAwake/releases)
 * Steam
 
 ## Setup some accounts
