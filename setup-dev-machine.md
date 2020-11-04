@@ -54,6 +54,8 @@ Then edit the control strip to have fewer buttons (or spaces) using Customize Co
 
 Logout and Log back in.
 
+(*Note* you may need to remove the ssh code from ~/.bash_ss
+
 ### Node and NVM
 
 * Install NVM: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
@@ -93,8 +95,8 @@ If the file doesn't already exist you can just run:
 
 ### Github Terminal Login
 
-`git _config_ --global user.name jeffrafter`
-`git _config_ --global user.email jeffrafter@github.com`
+`git config --global user.name jeffrafter`
+`git config --global user.email jeffrafter@github.com`
 
 Go to a private repo and `git pull` - you'll be asked for your username and password. If you can 2fa enabled you will need to generate a [personal access token](https://github.com/settings/tokens). When you do this, click the copy icon for the generated token before enabling SSO.
 
