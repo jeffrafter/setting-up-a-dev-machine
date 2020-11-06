@@ -54,7 +54,7 @@ Then edit the control strip to have fewer buttons (or spaces) using Customize Co
 
 Logout and Log back in.
 
-(*Note* you may need to remove the ssh code from ~/.bash_ss
+(*Note* you may need to remove the ssh code from ~/.bash_ssh)
 
 ### Node and NVM
 
@@ -67,6 +67,18 @@ Logout and Log back in.
 
 * `brew install rbenv`
 * `rbenv init`
+
+You should see:
+
+```
+# Load rbenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+
+status --is-interactive; and source (rbenv init -|psub)
+```
+
+Add it!
+
 
 Make `~/.gemrc`:
 
