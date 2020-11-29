@@ -56,12 +56,29 @@ Logout and Log back in.
 
 (*Note* you may need to remove the ssh code from ~/.bash_ssh)
 
+
+### SSH
+
+https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh
+
+`ssh-keygen -t ed25519 -C "jeffrafter@github.com"`
+
+Using `ssh-agent` in fish requires a couple of steps:
+
+Copy the contents of [Auto-launching ssh-agent in fish shell · GitHub](https://gist.github.com/gerbsen/5fd8aa0fde87ac7a2cae) to  `~/.config/fish/config.fish` (create it if not present)
+
+If the file doesn't already exist you can just run:
+
+`curl https://gist.githubusercontent.com/gerbsen/5fd8aa0fde87ac7a2cae/raw/8c58a3711bc727f9a2d6de87e24cd5768e6a21d1/ssh_agent_start.fish -o ~/.config/fish/config.fish`
+
+
 ### Node and NVM
 
 * Install NVM: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
 * Open  and new terminal window
 * `nvm install 12.16.1`
 * `omf install nvm`
+* `brew install nodenv`
 
 ### Ruby and rbenv
 
@@ -79,6 +96,19 @@ status --is-interactive; and source (rbenv init -|psub)
 
 Add it!
 
+Also add `nodenv`:
+
+```
+# Load nodenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+
+status --is-interactive; and source (nodenv init -|psub)
+```
+
+* `rbenv install 2.6.6`
+* `rbenv global 2.6.6`
+
+# Gems
 
 Make `~/.gemrc`:
 
@@ -92,23 +122,14 @@ Make `~/.gemrc`:
 gem: --no-ri --no-rdoc
 ```
 
+* Install rbenv: `rbenv install 2.6.6`
 * Install bundler:  `gem install bundler`
-
-### SSH
-
-Using `ssh-agent` in fish requires a couple of steps:
-
-Copy the contents of [Auto-launching ssh-agent in fish shell · GitHub](https://gist.github.com/gerbsen/5fd8aa0fde87ac7a2cae) to  `~/.config/fish/config.fish` (create it if not present)
-
-If the file doesn't already exist you can just run:
-
-`curl https://gist.githubusercontent.com/gerbsen/5fd8aa0fde87ac7a2cae/raw/8c58a3711bc727f9a2d6de87e24cd5768e6a21d1/ssh_agent_start.fish -o ~/.config/fish/config.fish`
 
 
 ### Github Terminal Login
 
 `git config --global user.name jeffrafter`
-`git config --global user.email jeffrafter@github.com`
+`git config --global user.email jeffrafter@gmail.com`
 
 Go to a private repo and `git pull` - you'll be asked for your username and password. If you can 2fa enabled you will need to generate a [personal access token](https://github.com/settings/tokens). When you do this, click the copy icon for the generated token before enabling SSO.
 
