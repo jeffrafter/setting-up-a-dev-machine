@@ -122,3 +122,5 @@ Open command pallete and choose: Open Keyboard Settings (JSON)
   },
 ]
 ```
+
+> Note: `.env` files won't quick open by default because they are ignored in the `.gitignore` which is used to exclude files. Open it once manually and then it will be quick-openable because it was "recently opened"
