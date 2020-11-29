@@ -106,3 +106,17 @@ Run: `git config --global -e`
 [difftool "default-difftool"]
     cmd = code --new-window --wait --diff $LOCAL $REMOTE
 ```
+
+Open command pallete and choose: Open Keyboard Settings (JSON)
+
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+]
