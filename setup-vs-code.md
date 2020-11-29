@@ -109,6 +109,7 @@ Run: `git config --global -e`
 
 Open command pallete and choose: Open Keyboard Settings (JSON)
 
+```
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
@@ -120,3 +121,4 @@ Open command pallete and choose: Open Keyboard Settings (JSON)
     "command": "-workbench.action.quickOpen"
   },
 ]
+```
