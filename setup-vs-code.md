@@ -87,7 +87,7 @@ Extensions:
 * /Bracket Pair Colorizer 2/ - https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
 * /Apollo GraphQL/ - https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo
 * /Spell Right/ - [Spell Right - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ban.spellright)
-
+* /Rails Run Specs/ - https://marketplace.visualstudio.com/items?itemName=noku.rails-run-spec-vscode (Cmd+L to run the spec at the line, Shift+Cmd+T to run all specs in the file)
 
 Setup VSCode for git:
 
