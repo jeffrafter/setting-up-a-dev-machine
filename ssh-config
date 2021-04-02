@@ -1,0 +1,28 @@
+# GitHub Production Hosts
+# ----------------------------------------------------------------------------
+Host gh-bastion
+  Hostname bastion.githubapp.com
+  ControlMaster auto
+  ControlPersist 30
+Host gh-shell
+  Hostname shell.service.cp1-iad.github.net
+  ProxyJump gh-bastion
+Host gh-aux2
+  Hostname ops-aux2-cp1-prd.iad.github.net
+  ProxyJump gh-bastion
+Host gh-lab
+  Hostname github-staff1-cp1-prd.iad.github.net
+  ProxyJump gh-bastion
+Host gh-garage
+  Hostname github-staff2-cp1-prd.iad.github.net
+  ProxyJump gh-bastion
+Host gh-splunk
+  Hostname splunk-searchhead2-cp1-prd.iad.github.net
+  LocalForward 8088 127.0.0.1:8000
+  ProxyJump gh-bastion
+Host gh-*
+  User jeffrafter
+  ForwardAgent yes
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
