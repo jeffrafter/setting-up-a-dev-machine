@@ -73,15 +73,6 @@ If the file doesn't already exist you can just run:
 
 `curl https://gist.githubusercontent.com/gerbsen/5fd8aa0fde87ac7a2cae/raw/8c58a3711bc727f9a2d6de87e24cd5768e6a21d1/ssh_agent_start.fish -o ~/.config/fish/config.fish`
 
-
-### Node and NVM
-
-* Install NVM: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
-* Open  and new terminal window
-* `nvm install 12.16.1`
-* `omf install nvm`
-* `brew install nodenv`
-
 ### Ruby and rbenv
 
 * `brew install rbenv`
@@ -96,19 +87,14 @@ You should see:
 status --is-interactive; and source (rbenv init -|psub)
 ```
 
-Add it!
+You can also just include the `source` part of the line in the interactive block if you have it already.
 
-Also add `nodenv`:
+Restart the terminal.
 
-```
-# Load nodenv automatically by appending
-# the following to ~/.config/fish/config.fish:
-
-status --is-interactive; and source (nodenv init -|psub)
-```
-
-* `rbenv install 2.6.6`
-* `rbenv global 2.6.6`
+* List ruby versions: `rbenv install -l`
+* Install ruby: `rbenv install 2.6.8`
+* Make it global: `rbenv global 2.6.8`
+* Install bundler:  `gem install bundler`
 
 # Gems
 
@@ -124,14 +110,55 @@ Make `~/.gemrc`:
 gem: --no-ri --no-rdoc
 ```
 
-* Install rbenv: `rbenv install 2.6.6`
-* Install bundler:  `gem install bundler`
+### Nodenv 
 
+* `brew install nodenv`
+* `nodenv init`
+
+You should see:
+
+```
+# Load nodenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+
+status --is-interactive; and source (nodenv init -|psub)
+```
+
+You can also just include the `source` part of the line in the interactive block if you have it already.
+
+Restart the terminal.
+
+* List node versions: `nodenv install -l`
+* Install node: `nodenv install 14.17.3`
+* Make it global: `nodenv global 14.17.3`
+
+### NVM (if you need, you probably don't if you have nodenv)
+
+* Install NVM: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
+* Open  and new terminal window
+* `nvm install 12.16.1`
+* `omf install nvm`
+
+## Python 3.x and conda
+
+* `brew install --cask miniforge`
+* `conda init fish`
+* Close and re-open terminal
+* `conda activate`
+* `conda install numpy scipy scikit-learn` (installing into the `base` env)
+
+To install a version of Python, create a new environment:
+
+* List available versions: `conda list python`
+* `conda create -n name_of_env python=version`
+* `conda activate name_of_env`
+* `python -m pip install ipython`
 
 ### Github Terminal Login
 
 `git config --global user.name jeffrafter`
 `git config --global user.email jeffrafter@gmail.com`
+`git config --global pull.rebase false`
 
 Go to a private repo and `git pull` - you'll be asked for your username and password. If you can 2fa enabled you will need to generate a [personal access token](https://github.com/settings/tokens). When you do this, click the copy icon for the generated token before enabling SSO.
 
