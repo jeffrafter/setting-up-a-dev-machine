@@ -44,18 +44,20 @@ Then edit the control strip to have fewer buttons (or spaces) using Customize Co
 ## Terminal
 * Install home-brew `/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)”`
 
+## Set the path for zsh
+
+If you are on an Apple M1 mac you might need to set the path to homebrew in zsh before continuing
+
 ### Setting up the shell (to fish)
 
 * Install fish `brew install fish`
 * Install Oh My Fish `curl -L https://get.oh-my.fish | fish`
 * Install Spacefish `omf install spacefish`
-* Change your default shell to fish: `chsh -s /usr/local/bin/fish`
-* Make it the login shell `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
-
-Logout and Log back in.
-
-(*Note* you may need to remove the ssh code from ~/.bash_ssh)
-
+* Add it to the shells `echo /usr/local/bin/fish | sudo tee -a /etc/shells` (if on Apple M1 mac: `echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells`)
+* Quit terminal and re-open
+* Change your default shell to fish: `chsh -s /usr/local/bin/fish` (if on Apple M1 mac: `chsh -s /opt/homebrew/bin/fish`)
+* Quit terminal and re-open, fish should be your default shell
+* For latest homebrew, set the fish paths: `set -U fish_user_paths /opt/homebrew/bin $fish_user_paths`
 
 ### SSH
 
