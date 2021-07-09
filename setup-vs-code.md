@@ -88,6 +88,8 @@ Extensions:
 * /Apollo GraphQL/ - https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo
 * /Spell Right/ - [Spell Right - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ban.spellright)
 * /Rails Run Specs/ - https://marketplace.visualstudio.com/items?itemName=noku.rails-run-spec-vscode (Cmd+L to run the spec at the line, Shift+Cmd+T to run all specs in the file)
+* /Python/ - https://marketplace.visualstudio.com/items?itemName=ms-python.python
+* /Jupyter/ - https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
 
 Setup VSCode for git:
 
