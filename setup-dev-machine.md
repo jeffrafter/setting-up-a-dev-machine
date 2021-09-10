@@ -129,8 +129,8 @@ You can also just include the `source` part of the line in the interactive block
 Restart the terminal.
 
 * List node versions: `nodenv install -l`
-* Install node: `nodenv install 14.17.3`
-* Make it global: `nodenv global 14.17.3`
+* Install node: `nodenv install 15.14.0` (note: 14.x versions may not compile on M1 Macs)
+* Make it global: `nodenv global 15.14.0`
 
 ### NVM (if you need, you probably don't if you have nodenv)
 
