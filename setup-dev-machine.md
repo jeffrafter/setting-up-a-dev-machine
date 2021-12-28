@@ -5,17 +5,6 @@ You can run this: [Setup a new Macbook · GitHub](https://gist.github.com/jeffra
 
 Copy the contents to `~/.macos` and `chmod +x`. Then you should be able to execute it.
 
-## Touch Bar
-Open System Preferences and go to the Keyboard settings.
-
-Change to Extended Control Strip:
-
-![](https://rpl.cat/uploads/OkTVCBr6S8jzGd_jwjJOF3lSFOvLiaqgpGGzBxpEJ3A/public.png)
-
-Then edit the control strip to have fewer buttons (or spaces) using Customize Control Strip:
-
-![](https://rpl.cat/uploads/4m5n263YIHqjtkDw8bu5cBHukenHdxZbTOItIq1K9b4/public.png)
-
 ## Install some software 
 * Xcode (App Store, and command line developer tools)
 * VSCode (https://code.visualstudio.com/download)
