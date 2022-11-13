@@ -9,3 +9,4 @@ Then edit the control strip to have fewer buttons (or spaces) using Customize Co
 
 ![](https://rpl.cat/uploads/4m5n263YIHqjtkDw8bu5cBHukenHdxZbTOItIq1K9b4/public.png)
 
+*
