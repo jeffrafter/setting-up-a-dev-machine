@@ -107,6 +107,9 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension apollographql.vscode-apollo
 code --install-extension ban.spellright
 code --install-extension ms-python.python
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension hashicorp.terraform
+code --install-extension tonybaloney.vscode-pets
 ```
 
 
