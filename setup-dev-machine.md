@@ -31,7 +31,10 @@ Copy the contents to `~/.macos` and `chmod +x`. Then you should be able to execu
 * Setup Mail
 
 ## Terminal
-* Install home-brew `/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)”`
+
+Install [Homebrew](https://brew.sh):
+
+* Install home-brew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 ## Set the path for zsh
 
@@ -155,3 +158,8 @@ Go to a private repo and `git pull` - you'll be asked for your username and pass
 
 > Hi jeffrafter! You've successfully authenticated, but GitHub does not provide shell access.
 
+# UTM
+https://docs.getutm.app/guides/windows/
+brew install aria2 cabextract cdrtools wimlib
+brew tap minacle/chntpw
+brew install minacle/chntpw/chntpw
