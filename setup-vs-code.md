@@ -91,6 +91,27 @@ Extensions:
 * /Python/ - https://marketplace.visualstudio.com/items?itemName=ms-python.python
 * /Jupyter/ - https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
 
+As command line:
+
+```
+code --install-extension minamarkham.yonce-theme
+code --install-extension rebornix.Ruby
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension esbenp.prettier-vscode
+code --install-extension ziyasal.vscode-open-in-github
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension waderyan.gitblame
+code --install-extension samverschueren.final-newline
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension DmitryDorofeev.empty-indent
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension apollographql.vscode-apollo
+code --install-extension ban.spellright
+code --install-extension ms-python.python
+```
+
+
 Setup VSCode for git:
 
 ```

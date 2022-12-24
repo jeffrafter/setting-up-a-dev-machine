@@ -40,12 +40,19 @@ Install [Homebrew](https://brew.sh):
 
 If you are on an Apple M1 mac you might need to set the path to homebrew in zsh before continuing
 
+```
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/njero/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/njero/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 ### Setting up the shell (to fish)
 
 * Install fish `brew install fish`
 * Install Oh My Fish `curl -L https://get.oh-my.fish | fish`
-* Install Spacefish `omf install spacefish`
-* Add it to the shells `echo /usr/local/bin/fish | sudo tee -a /etc/shells` (if on Apple M1 mac: `echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells`)
+* Install starship: `brew install starship`
+* Add starship to fish: `echo "starship init fish | source" >> ~/.config/fish/config.fish`
+* Add fish to your shells `echo /usr/local/bin/fish | sudo tee -a /etc/shells` (if on Apple M1 mac: `echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells`)
 * Quit terminal and re-open
 * Change your default shell to fish: `chsh -s /usr/local/bin/fish` (if on Apple M1 mac: `chsh -s /opt/homebrew/bin/fish`)
 * Quit terminal and re-open, fish should be your default shell
@@ -55,7 +62,7 @@ If you are on an Apple M1 mac you might need to set the path to homebrew in zsh 
 
 https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh
 
-`ssh-keygen -t ed25519 -C "jeffrafter@github.com"`
+`ssh-keygen -t ed25519 -C "jeffrafter@gmail.com"`
 
 Using `ssh-agent` in fish requires a couple of steps:
 
@@ -63,7 +70,8 @@ Copy the contents of [Auto-launching ssh-agent in fish shell · GitHub](https://
 
 If the file doesn't already exist you can just run:
 
-`curl https://gist.githubusercontent.com/gerbsen/5fd8aa0fde87ac7a2cae/raw/8c58a3711bc727f9a2d6de87e24cd5768e6a21d1/ssh_agent_start.fish -o ~/.config/fish/config.fish`
+`curl 
+https://gist.githubusercontent.com/gerbsen/5fd8aa0fde87ac7a2cae/raw/8c58a3711bc727f9a2d6de87e24cd5768e6a21d1/ssh_agent_start.fish -o ~/.config/fish/config.fish`
 
 ### Ruby and rbenv
 
@@ -123,13 +131,6 @@ Restart the terminal.
 * List node versions: `nodenv install -l`
 * Install node: `nodenv install 15.14.0` (note: 14.x versions may not compile on M1 Macs)
 * Make it global: `nodenv global 15.14.0`
-
-### NVM (if you need, you probably don't if you have nodenv)
-
-* Install NVM: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
-* Open  and new terminal window
-* `nvm install 12.16.1`
-* `omf install nvm`
 
 ## Python 3.x and conda
 
