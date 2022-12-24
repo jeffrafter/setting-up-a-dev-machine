@@ -84,7 +84,6 @@ Extensions:
 * /ESLint/ - https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 * /empty-indent/ - https://marketplace.visualstudio.com/items?itemName=DmitryDorofeev.empty-indent
 * /Code Spell Checker/ - https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
-* /Bracket Pair Colorizer 2/ - https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
 * /Apollo GraphQL/ - https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo
 * /Spell Right/ - [Spell Right - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ban.spellright)
 * /Rails Run Specs/ - https://marketplace.visualstudio.com/items?itemName=noku.rails-run-spec-vscode (Cmd+L to run the spec at the line, Shift+Cmd+T to run all specs in the file)
@@ -105,7 +104,6 @@ code --install-extension samverschueren.final-newline
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension DmitryDorofeev.empty-indent
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension apollographql.vscode-apollo
 code --install-extension ban.spellright
 code --install-extension ms-python.python
