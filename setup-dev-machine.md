@@ -161,6 +161,11 @@ Go to a private repo and `git pull` - you'll be asked for your username and pass
 
 # UTM
 https://docs.getutm.app/guides/windows/
+
+Install homebrew (above)
+
+```
 brew install aria2 cabextract cdrtools wimlib
 brew tap minacle/chntpw
 brew install minacle/chntpw/chntpw
+```
