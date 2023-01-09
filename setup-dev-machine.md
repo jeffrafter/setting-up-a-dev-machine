@@ -153,7 +153,27 @@ To install a version of Python, create a new environment:
 `git config --global user.email jeffrafter@gmail.com`
 `git config --global pull.rebase false`
 
-Go to a private repo and `git pull` - you'll be asked for your username and password. If you can 2fa enabled you will need to generate a [personal access token](https://github.com/settings/tokens). When you do this, click the copy icon for the generated token before enabling SSO.
+Install `gh` to work with github CLI:
+
+```
+brew install gh
+```
+
+Then login:
+
+```
+❯ gh auth login                                                                            (base) 
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+```
+
+Go to a private repo and `git pull` - you'll be asked for your username and password. 
+
+#### Old : don't use personal access tokens
+
+If you can 2fa enabled you will need to generate a [personal access token](https://github.com/settings/tokens). When you do this, click the copy icon for the generated token before enabling SSO.
 
 `ssh -T git@github.com`
 
