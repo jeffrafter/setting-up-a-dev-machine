@@ -179,6 +179,25 @@ If you can 2fa enabled you will need to generate a [personal access token](https
 
 > Hi jeffrafter! You've successfully authenticated, but GitHub does not provide shell access.
 
+# Git aliases
+
+Put this at the end of your `~/.gitconfig`
+
+```
+[alias]
+  wtf = for-each-ref --sort=-committerdate refs/heads --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))' --count=10
+  remote-wtf = for-each-ref --sort=-committerdate refs/heads refs/remotes --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset)) %(authorname)' --count=20
+	open = "!f() { \
+    open \"$(git ls-remote --get-url $(git config --get branch.$(git rev-parse --abbrev-ref HEAD).remote) \
+    | sed 's|git@github.com:\\(.*\\)$|https://github.com/\\1|' \
+    | sed 's|\\.git$||'; \
+    )/compare/$(\
+    git config --get branch.$(git rev-parse --abbrev-ref HEAD).merge | cut -d '/' -f 3- \
+    )?expand=1\"; \
+  }; f"
+```
+
+
 # UTM
 https://docs.getutm.app/guides/windows/
 
