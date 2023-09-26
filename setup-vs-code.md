@@ -12,15 +12,14 @@ Preferences: Open Settings (JSON)
 
 ```
 {
-  "window.zoomLevel": 2,
   "editor.renderWhitespace": "all",
   "editor.folding": false,
   "editor.renderControlCharacters": true,
+  "editor.stickyScroll.enabled": true,
   "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "workbench.statusBar.visible": true,
   "workbench.colorTheme": "Yoncé",
-  "workbench.editor.enablePreview": false,
   "extensions.ignoreRecommendations": true,
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
@@ -34,23 +33,24 @@ Preferences: Open Settings (JSON)
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "C_Cpp.updateChannel": "Insiders",
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.alwaysShowStatus": true,
-  "cSpell.userWords": [
-  ],
+  "cSpell.userWords": ["Parentheticals"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -58,15 +58,43 @@ Preferences: Open Settings (JSON)
     "enabled": false,
     "liveIndexing": false,
     "delay": 500,
-    "exclude": [
-      ".terraform/**/*",
-      "**/.terraform/**/*"
-    ]
+    "exclude": [".terraform/**/*", "**/.terraform/**/*"]
   },
   "terraform.languageServer": {
     "enabled": true,
     "args": []
-  }
+  },
+  "editor.inlineSuggest.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "fountain.pdf.createBookmarks": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "window.zoomLevel": 1,
+  "window.commandCenter": true,
+  "[csharp]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "omnisharp.monoPath": "/Library/Frameworks/Mono.framework/Versions/Current/Commands/mono",
+  "omnisharp.useGlobalMono": "always",
+  "omnisharp.path": "latest",
+  "omnisharp.useModernNet": false,
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+  "csharp.inlayHints.enableInlayHintsForTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
 }
 ```
 
